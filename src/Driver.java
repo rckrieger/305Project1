@@ -1,4 +1,5 @@
 import java.math.*;
+import java.io.PrintWriter;
 import java.lang.*;
 
 public class Driver extends User {
@@ -6,7 +7,7 @@ public class Driver extends User {
 	String vehicle;
 	double distAwayFromCustomer;
 	public Driver(String userName, double balance, String title, boolean occupied) {
-		super(title, balance);
+		super(userName, balance);
 		this.vehicle = title;
 		this.occupied = occupied;
 	}
@@ -21,9 +22,16 @@ public class Driver extends User {
 	}
 	
 	public boolean acceptsRide() {
-		return (Math.random() <= .1);
+		
+		return (Math.random() >= .1);
 	}
 	public boolean setOccupied(boolean value) {
 		return occupied = value;
 	}
+	
+	public void printUser(PrintWriter writer) {
+		super.printUser(writer);
+		writer.printf("%s %s score %.1f", vehicle, occupied, getRating());
+	}
+	
 }

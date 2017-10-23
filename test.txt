@@ -1,6 +1,6 @@
-Passenger Penelope 50.0
-Passenger Penny 2.0
-Passenger Percy 6.0
+Passenger Penelope 500.0
+Passenger Penny 200.0
+Passenger Percy 60.0
 Passenger Penny 90.0
 Passenger Paula 300.0
 Driver Ana 0.0 Tesla false

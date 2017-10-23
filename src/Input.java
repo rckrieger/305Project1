@@ -3,10 +3,10 @@ import java.util.Scanner;
 import java.io.*;
 public class Input
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException
 	{
 		ArrayList<Driver> drivers = new ArrayList();
-		ArrayList<Rider> riders = new ArrayList();
+		ArrayList<Requestor> riders = new ArrayList();
 		File inputFile = null;
 		Scanner inputStream  = null;
 		try {
@@ -36,6 +36,30 @@ public class Input
 				drivers.add(new Driver(userName, balance, carTitle, occupied));
 			}
 	    }
-		//new UberMap(drivers, riders)
+		UberMap floorplan = new UberMap(drivers, riders);
+		System.out.println("All done!");
+		finalstates(floorplan);
+		System.out.println("check output");
+
+	}
+	public static void finalstates(UberMap map) {
+		PrintWriter writer = null;
+		try {
+			writer = new PrintWriter("finaloutput.txt", "UTF-8");
+		} catch (FileNotFoundException | UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		for  (Driver carGuy: map.allTheDrivers)
+		{
+			carGuy.printUser(writer);
+			writer.printf("%n");
+			writer.flush();
+		}
+		for  (Requestor rider: map.allTheRequestors)
+		{
+			rider.printUser(writer);
+			writer.printf("%n");
+			writer.flush();
+		}
 	}
 }

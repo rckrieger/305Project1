@@ -1,3 +1,5 @@
+import java.io.PrintWriter;
+
 public class Payment{
 	double paymentRate;
 	double driversCutRate = .75;
@@ -8,20 +10,21 @@ public class Payment{
 	}
 	
 	
-	public void paymentProcess(User customer, Driver driverPerson, double distance) {
-		double fee = paymentRate * distance;
+	public boolean paymentProcess(User customer, DriverDistTuple driverPerson, PrintWriter writer) {
+		double fee = paymentRate * driverPerson.getDist();
 		if (checkBalance(customer, fee))
-			makePayment(customer, driverPerson, fee);
+		{
+			makePayment(customer, driverPerson.getDriver(), fee);
+			writer.printf("%s's payment transaction is performed, the cost was %.2f%n", customer.getName(), fee);
+			return true;
+		}
+		
 		else {
-			//TODO: write failure message
+			writer.printf("%s could not afford the ride with %s %n", customer.getName(), driverPerson.getDriver().getName()); 	
+			return false;
 		}
 			
 	}
-	
-	public void dudeYouAreBroke() {
-		
-	}
-	
 	
 	public boolean checkBalance(User customer, double fee) {
 		//check to see if the customer's balance is >= to trip cost

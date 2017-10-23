@@ -1,0 +1,15 @@
+Ana - balance: 38.24 Location: (287,223) Tesla false score 4.0
+Bobby - balance: 10.00 Location: (162,224) BMW false score 5.0
+Cali - balance: 73.20 Location: (241,265) Volkswagen false score 2.0
+Dora - balance: 30.00 Location: (197,224) Ferari false score 5.0
+Ema - balance: 400.00 Location: (116,288) Honda false score 5.0
+Furgie - balance: 500.00 Location: (39,224) Toyota false score 5.0
+Georgia - balance: 677.68 Location: (131,137) Camden false score 4.0
+Helen - balance: 7000.00 Location: (87,41) Toyota false score 5.0
+Igor - balance: 8000.00 Location: (171,76) Bug false score 5.0
+Jules - balance: 900000.00 Location: (200,204) Honda false score 5.0
+Penelope - balance: 449.01 Location: (287,223) 
+Penny - balance: 96.42 Location: (131,137) 
+Percy - balance: 60.00 Location: (103,164) 
+Penny - balance: 90.00 Location: (215,14) 
+Paula - balance: 229.06 Location: (241,265) 
