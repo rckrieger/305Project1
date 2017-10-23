@@ -1,10 +1,25 @@
 import java.util.*;
+import java.util.Random;
 public class UberMap{
 	int NumRows = 300;
 	int NumCols = 300;
 	int[][] grid = new int[NumRows][NumCols];
-	Driver[] allTheDrivers = new Driver[5];
-	Requestor[] allTheCustomers = new Rider[10];
+	Random randGenerator = new Random();
+	ArrayList<Driver> allTheDrivers;
+	public UberMap(ArrayList<Driver> d, ArrayList<Requestor> r) {
+		allTheDrivers = d;
+		for (Driver carGuy: d)
+		{
+			carGuy.setStart(new Coordinate(randGenerator.nextInt(300), randGenerator.nextInt(300)));
+		}
+		for (Requestor passenger: r)
+		{
+			passenger.setStart(new Coordinate(randGenerator.nextInt(300), randGenerator.nextInt(300)));
+			passenger.setEnd(new Coordinate(randGenerator.nextInt(300), randGenerator.nextInt(300)));
+			while (passenger.getPickUp().equals(passenger.getDropOff()))
+				passenger.setEnd(new Coordinate(randGenerator.nextInt(300), randGenerator.nextInt(300)));
+		}
+	}
 	public int getNumRows() {
 		return NumRows;
 	}
@@ -59,12 +74,19 @@ public class UberMap{
 
 		@Override
 		public int compareTo(DriverDistTuple o) {
-			if (this.getDist() > o.getDist())
-				return 1;
+			if (this.getDist() == o.getDist())
+			{	if(this.getDriver().getRating() > o.getDriver().getRating())
+					return 1;
+				else if (this.getDriver().getRating() < o.getDriver().getRating())
+					return -1;
+				else
+					return 0;
+			}
 			else if (this.getDist() < o.getDist())
 				return -1;
-			else
-				return 0;
+			else {
+				return 1;
+			}
 		}
 		
 	}

@@ -12,4 +12,11 @@ public class Coordinate{
 	public int getY() {
 		return yCoord;
 	}
+	public boolean equals(Coordinate that) {
+		if (this.getX() == that.getX() &&
+			this.getY() == that.getY())
+			return true;
+		return false;
+		
+	}
 }

@@ -7,7 +7,16 @@ public abstract class User {
 	double userRating;
 	double balance;
 	int phoneNumber;
-
+	public User(String userName, double balance) {
+		this.userName = userName;
+		this.balance = balance;
+	}
+	public void setStart(Coordinate locale) {
+		this.pickUp = locale;
+	}
+	public void setEnd(Coordinate locale) {
+		this.dropOff = locale;
+	}
 	public double getBalance()
 	{
 		return balance;
@@ -15,6 +24,10 @@ public abstract class User {
 	public void setBalance(double money)
 	{
 		this.balance = money;
+	}
+	public double getRating()
+	{
+		return userRating;
 	}
 	public Coordinate getPickUp()
 	{

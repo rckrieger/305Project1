@@ -1,8 +1,15 @@
 import java.math.*;
+import java.lang.*;
+
 public class Driver extends User {
 	boolean occupied;
-	Car vehicle;
+	String vehicle;
 	double distAwayFromCustomer;
+	public Driver(String userName, double balance, String title, boolean occupied) {
+		super(title, balance);
+		this.vehicle = title;
+		this.occupied = occupied;
+	}
 	public void setDistAwayFromCustomer(double value) {
 		distAwayFromCustomer = value;
 	}
