@@ -1,0 +1,2 @@
+My code can be reused for uber eats by making a child class like "HungryPerson", that would extend its parent Requestor. Requestor is a user class that meets most of the needs of a non-driver. The only functionality that would need to be added in "HungryPerson" is the food order, as pick up and drop off would become restaurant pick up and restaurant drop off. Theoretically you could set what time your food arrive or your ride arrives, so that functionality would be in requester oif it were needed.
+https://github.com/rckrieger/305Project1
