@@ -19,16 +19,53 @@ public class UberMap{
 	{
 		return Math.pow((customer.getDropOff().getX() - customer.getPickUp().getX()), 2) +
 				Math.pow((customer.getDropOff().getY() - customer.getPickUp().getY()),2);
-	}
-	
+	}	
 	
 	public Driver sendDriver(Requestor customer) {
-		Map values = new HashMap<Double, Driver>();
-		for (Driver car: allTheDrivers)
+		while(true)
 		{
-			values.put(distanceToPassenger(car, customer), car);
+			ArrayList<DriverDistTuple> possibleDrivers = new ArrayList<DriverDistTuple>();
+			for (Driver car: allTheDrivers)
+			{
+				if(!car.isOccupied()){
+					possibleDrivers.add(new DriverDistTuple(car, distanceToPassenger(car, customer)));
+				}	
+			}
+			Collections.sort(possibleDrivers);
+			for (DriverDistTuple pair: possibleDrivers)
+			{
+				if (pair.getDriver().acceptsRide())
+				{
+					pair.getDriver().setOccupied(true);
+					return pair.getDriver();
+				}
+			}
 		}
-		Collections.sort((List<Double>) values.keySet());
+	}
+	private class DriverDistTuple implements Comparable<DriverDistTuple>{
+		double dist;
+		Driver dude;
+		DriverDistTuple(Driver dude, double dist)
+		{
+			this.dist = dist;
+			this.dude = dude;
+		}
+		public double getDist() {
+			return this.dist;
+		}
+		public Driver getDriver() {
+			return this.dude;
+		}
+
+		@Override
+		public int compareTo(DriverDistTuple o) {
+			if (this.getDist() > o.getDist())
+				return 1;
+			else if (this.getDist() < o.getDist())
+				return -1;
+			else
+				return 0;
+		}
 		
 	}
 }
