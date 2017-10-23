@@ -3,16 +3,15 @@ import java.util.Scanner;
 import java.io.*;
 public class Input
 {
-	public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException
-	{
-		ArrayList<Driver> drivers = new ArrayList();
-		ArrayList<Requestor> riders = new ArrayList();
+	
+	private static ArrayListTuple readInput() {
+		ArrayList<Driver> drivers = new ArrayList<Driver>();
+		ArrayList<Requestor> riders = new ArrayList<Requestor>();
 		File inputFile = null;
 		Scanner inputStream  = null;
 		try {
 			inputFile = new File("test.txt") ;
-		}
-		catch(Exception e) {
+		} catch(Exception e) {
 			e.printStackTrace();
 		}
 		try {
@@ -36,20 +35,71 @@ public class Input
 				drivers.add(new Driver(userName, balance, carTitle, occupied));
 			}
 	    }
-		UberMap floorplan = new UberMap(drivers, riders);
-		System.out.println("All done!");
-		finalstates(floorplan);
-		System.out.println("check output");
-
+		
+		return new ArrayListTuple(drivers, riders);
 	}
-	public static void finalstates(UberMap map) {
+	
+	public static void main(String[] args)
+	{
+		ArrayListTuple inputArrayLists = readInput();
+		ArrayList<Driver> drivers = inputArrayLists.getDrivers();
+		ArrayList<Requestor> riders = inputArrayLists.getRiders();
+		UberMap floorplan = null;
+		floorplan = new UberMap(drivers, riders);
+		startTrips(floorplan);
+		finalstates(floorplan);
+	}
+	
+	public static PrintWriter intailizeTriplog() {
+		File triplogFile = null;
+		try {
+			triplogFile = new File("triplog.txt");
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		PrintWriter triplog =  null;
+		try {
+			triplog = new PrintWriter(triplogFile);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		return triplog;
+	}
+	
+	private static void startTrips(UberMap floorplan)
+	{
+		int counter = 0;
+		PrintWriter triplog = intailizeTriplog();
+		Thread[] trips;
+		trips = new Thread[floorplan.allTheRequestors.size()];
+		for (Requestor passenger: floorplan.allTheRequestors)
+		{
+			Runnable trip = new Trip(passenger, floorplan, triplog);
+			trips[counter++] = new Thread(trip);
+		}
+		for (Thread trip: trips)
+		{
+			trip.start();	
+		}
+		for (Thread trip: trips)
+		{
+			try {
+				trip.join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}	
+		}
+	}
+	
+	private static void finalstates(UberMap map) {
 		PrintWriter writer = null;
 		try {
 			writer = new PrintWriter("finaloutput.txt", "UTF-8");
 		} catch (FileNotFoundException | UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
-		writer.printf("Sucessful Trips: %d, Failed Trips: %d%n", map.sucessfulRides, map.failedRides);
+		writer.printf("Sucessful Trips: %d, Failed Trips: %d%n", 
+				map.sucessfulRides, map.failedRides);
 		writer.flush();
 		for  (Driver carGuy: map.allTheDrivers)
 		{
@@ -64,4 +114,5 @@ public class Input
 			writer.flush();
 		}
 	}
+	
 }

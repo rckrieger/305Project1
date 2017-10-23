@@ -1,26 +1,26 @@
-Sucessful Trips: 4, Failed Trips: 1
-Ana - Balance: 59.72 Location: (108,63) Rating: 2.0
+Sucessful Trips: 3, Failed Trips: 2
+Ana - Balance: $140.25 Location: (176,58) Rating: 3.0
       Title: Tesla Occupied: false
-Bobby - Balance: 10.00 Location: (263,29) Rating: 5.0
+Bobby - Balance: $10.00 Location: (134,83) Rating: 5.0
       Title: BMW Occupied: false
-Cali - Balance: 20.00 Location: (189,275) Rating: 5.0
+Cali - Balance: $20.00 Location: (215,51) Rating: 5.0
       Title: Volkswagen Occupied: false
-Dora - Balance: 30.00 Location: (266,99) Rating: 5.0
+Dora - Balance: $30.00 Location: (254,68) Rating: 5.0
       Title: Ferari Occupied: false
-Ema - Balance: 400.00 Location: (42,165) Rating: 5.0
+Ema - Balance: $490.90 Location: (43,6) Rating: 3.0
       Title: Honda Occupied: false
-Furgie - Balance: 610.43 Location: (125,158) Rating: 1.5
+Furgie - Balance: $500.00 Location: (62,12) Rating: 5.0
       Title: Toyota Occupied: false
-Georgia - Balance: 668.84 Location: (201,4) Rating: 3.0
+Georgia - Balance: $600.00 Location: (20,114) Rating: 5.0
       Title: Camden Occupied: false
-Helen - Balance: 7000.00 Location: (135,102) Rating: 5.0
+Helen - Balance: $7000.00 Location: (97,107) Rating: 5.0
       Title: Toyota Occupied: false
-Igor - Balance: 8000.00 Location: (79,155) Rating: 5.0
+Igor - Balance: $8000.00 Location: (44,62) Rating: 5.0
       Title: Bug Occupied: false
-Jules - Balance: 900000.00 Location: (254,227) Rating: 5.0
+Jules - Balance: $900023.49 Location: (145,260) Rating: 3.0
       Title: Honda Occupied: false
-Penelope - Balance: 408.22 Location: (201,4) 
-Penny - Balance: 110.45 Location: (247,219) 
-Percy - Balance: 60.00 Location: (278,170) 
-Penny - Balance: 10.38 Location: (108,63) 
-Paula - Balance: 242.31 Location: (125,158) 
+Penelope - Balance: $378.80 Location: (43,6) 
+Penny - Balance: $13.00 Location: (176,58) 
+Percy - Balance: $60.00 Location: (230,207) 
+Penny - Balance: $90.00 Location: (230,197) 
+Paula - Balance: $268.68 Location: (145,260) 

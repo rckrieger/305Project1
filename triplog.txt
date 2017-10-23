@@ -1,39 +1,41 @@
-Penny picked a valid drop off
+Penelope picked a valid drop off
 Paula picked a valid drop off
 Penny picked a valid drop off
 Percy picked a valid drop off
-Penelope picked a valid drop off
-Percy could not afford the ride with Furgie 
-Percy could not afford the ride with Jules 
+Penny picked a valid drop off
+Penny could not afford the ride with Ana 
+Penelope's payment transaction is performed, the cost was $121.20
+Penelope your driver Ema accepted the ride and will be there in 56.56 minutes 
+Penelope your driver Ema is on their way to you
+Penny's payment transaction is performed, the cost was $187.00
+Penny your driver Ana accepted the ride and will be there in 87.26 minutes 
+Penny your driver Ana is on their way to you
+Paula's payment transaction is performed, the cost was $31.32
+Paula your driver Jules accepted the ride and will be there in 14.62 minutes 
+Paula your driver Jules is on their way to you
 Percy could not afford the ride with Ana 
+Percy could not afford the ride with Ema 
+Percy could not afford the ride with Dora 
+Percy could not afford the ride with Jules 
 Percy could not afford the ride with Cali 
-Percy could not afford the ride with Bobby 
 Percy could not afford the ride with Helen 
 Percy could not afford the ride with Igor 
-Percy could not afford the ride with Ema 
-Percy could not afford the ride with Georgia 
-Penny's payment transaction is performed, the cost was 89.55
-Penny your driver Furgie accepted the ride and will be there in 671.66 
-Penny your driver is on their way to you
-Penny's payment transaction is performed, the cost was 79.62
-Penny your driver Ana accepted the ride and will be there in 597.18 
-Penny your driver is on their way to you
-Penelope's payment transaction is performed, the cost was 91.78
-Penelope your driver Georgia accepted the ride and will be there in 688.37 
-Penelope your driver is on their way to you
-Paula's payment transaction is performed, the cost was 57.69
-Paula your driver Furgie accepted the ride and will be there in 432.67 
-Paula your driver is on their way to you
+Percy could not afford the ride with Furgie 
+Penny could not afford the ride with Dora 
+Penny could not afford the ride with Cali 
+Penny could not afford the ride with Bobby 
+Penny could not afford the ride with Jules 
+Penny could not afford the ride with Helen 
+Penny could not afford the ride with Igor 
+Penny could not afford the ride with Furgie 
+Penny could not afford any rides
 Percy could not afford any rides
-Paula your driver is ready to pick you up
-Paula your driver is on their way to your destination
-Penny your driver is ready to pick you up
-Penny your driver is on their way to your destination
-Penny your driver is ready to pick you up
-Penny your driver is on their way to your destination
-Penelope your driver is ready to pick you up
-Penelope your driver is on their way to your destination
-Penny your trip is complete
-Paula your trip is complete
-Penny your trip is complete
-Penelope your trip is complete
+Paula your driver Jules is ready to pick you up
+Paula your driver Jules is on their way to your destination
+Paula your trip is complete.You rated Jules 3 stars. You have arrived at (145, 260)
+Penelope your driver Ema is ready to pick you up
+Penelope your driver Ema is on their way to your destination
+Penelope your trip is complete.You rated Ema 3 stars. You have arrived at (43, 6)
+Penny your driver Ana is ready to pick you up
+Penny your driver Ana is on their way to your destination
+Penny your trip is complete.You rated Ana 3 stars. You have arrived at (176, 58)

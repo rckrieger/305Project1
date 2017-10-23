@@ -18,7 +18,8 @@ public class DriverDistTuple implements Comparable<DriverDistTuple>{
 			if (this.getDist() == o.getDist())
 			{	if(this.getDriver().getRating() > o.getDriver().getRating())
 					return 1;
-				else if (this.getDriver().getRating() < o.getDriver().getRating())
+				else if (this.getDriver().getRating() < 
+						o.getDriver().getRating())
 					return -1;
 				else
 					return 0;

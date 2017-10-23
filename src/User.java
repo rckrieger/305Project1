@@ -10,7 +10,6 @@ public abstract class User {
 	int numRatings;
 	double balance;
 	int phoneNumber;
-	Random randGenerator = new Random();
 	public User(String userName, double balance) {
 		this.userName = userName;
 		this.balance = balance;
@@ -38,9 +37,9 @@ public abstract class User {
 	{
 		return userRating;
 	}
-	public void setRating()
+	public void setRating(int newRating)
 	{
-		double total = numRatings * userRating + randGenerator.nextInt(4) + 1;
+		double total = numRatings * userRating + newRating;
 		this.userRating = total/ ((double) ++numRatings);
 	}
 	public Coordinate getPickUp()
@@ -53,7 +52,7 @@ public abstract class User {
 	}
 
 	public void printUser(PrintWriter writer) {
-		writer.printf("%s - Balance: %.2f Location: (%d,%d) ", userName, balance, pickUp.getX(), pickUp.getY());	
+		writer.printf("%s - Balance: $%.2f Location: (%d,%d) ", userName, balance, pickUp.getX(), pickUp.getY());	
 	}
 	
 }

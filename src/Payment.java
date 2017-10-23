@@ -7,20 +7,22 @@ public class Payment{
 	public Payment(double pRate)
 	{
 		paymentRate = pRate;
-	}
+	}	
 	
-	
-	public boolean paymentProcess(User customer, DriverDistTuple driverPerson, PrintWriter writer) {
+	public boolean paymentProcess(User customer, DriverDistTuple driverPerson,
+			PrintWriter writer) {
 		double fee = paymentRate * driverPerson.getDist();
 		if (checkBalance(customer, fee))
 		{
 			makePayment(customer, driverPerson.getDriver(), fee);
-			writer.printf("%s's payment transaction is performed, the cost was %.2f%n", customer.getName(), fee);
+			writer.printf("%s's payment transaction is performed, "
+				+ "the cost was $%.2f%n", customer.getName(), fee);
 			return true;
 		}
 		
 		else {
-			writer.printf("%s could not afford the ride with %s %n", customer.getName(), driverPerson.getDriver().getName()); 	
+			writer.printf("%s could not afford the ride with %s %n", 
+				customer.getName(), driverPerson.getDriver().getName()); 	
 			return false;
 		}
 			
@@ -34,9 +36,11 @@ public class Payment{
 		}
 		return false;
 	}
+	
 	public void makePayment(User customer, Driver driverPerson, double fee)
 	{
-		driverPerson.setBalance(driverPerson.getBalance() + (fee * driversCutRate));
+		driverPerson.setBalance(driverPerson.getBalance() + 
+			(fee * driversCutRate));
 		customer.setBalance(customer.getBalance() - fee);
 	}
 }

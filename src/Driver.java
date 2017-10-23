@@ -1,12 +1,11 @@
-import java.math.*;
 import java.io.PrintWriter;
-import java.lang.*;
 
 public class Driver extends User {
 	boolean occupied;
 	String vehicle;
 	double distAwayFromCustomer;
-	public Driver(String userName, double balance, String title, boolean occupied) {
+	public Driver(String userName, double balance, String title, 
+			boolean occupied) {
 		super(userName, balance);
 		this.vehicle = title;
 		this.occupied = occupied;
@@ -31,7 +30,8 @@ public class Driver extends User {
 	
 	public void printUser(PrintWriter writer) {
 		super.printUser(writer);
-		writer.printf("Rating: %.1f%n      Title: %s Occupied: %s", getRating(), vehicle, occupied);
+		writer.printf("Rating: %.1f%n      Title: %s Occupied: %s",
+				getRating(), vehicle, occupied);
 
 	}
 	
