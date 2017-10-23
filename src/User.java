@@ -53,7 +53,7 @@ public abstract class User {
 	}
 
 	public void printUser(PrintWriter writer) {
-		writer.printf("%s - balance: %.2f Location: (%d,%d) ", userName, balance, pickUp.getX(), pickUp.getY());	
+		writer.printf("%s - Balance: %.2f Location: (%d,%d) ", userName, balance, pickUp.getX(), pickUp.getY());	
 	}
 	
 }

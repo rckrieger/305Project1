@@ -91,6 +91,7 @@ public class UberMap{
 					paymentSystem.paymentProcess(customer, pair, triplog))
 				{
 					pair.getDriver().setOccupied(true);
+					sucessfulRides++;
 					return pair;
 				}
 			}

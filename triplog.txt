@@ -1,44 +1,39 @@
-Penelope picked a valid drop off
+Penny picked a valid drop off
 Paula picked a valid drop off
 Penny picked a valid drop off
 Percy picked a valid drop off
-Penny picked a valid drop off
-Penny could not afford the ride with Igor 
-Penelope's payment transaction is performed, the cost was 50.99
-Penny's payment transaction is performed, the cost was 103.58
-Penny your driver Georgia accepted the ride and will be there in 776.82 
-Percy could not afford the ride with Ana 
-Paula's payment transaction is performed, the cost was 70.94
-Paula your driver Cali accepted the ride and will be there in 532.02 
-Paula your driver is on their way to you
-Percy could not afford the ride with Cali 
-Penny your driver is on their way to you
-Penelope your driver Ana accepted the ride and will be there in 382.43 
-Penelope your driver is on their way to you
-Penny could not afford the ride with Helen 
-Percy could not afford the ride with Bobby 
+Penelope picked a valid drop off
 Percy could not afford the ride with Furgie 
-Percy could not afford the ride with Georgia 
-Penny could not afford the ride with Ana 
 Percy could not afford the ride with Jules 
-Percy could not afford the ride with Igor 
-Penny could not afford the ride with Jules 
-Percy could not afford the ride with Dora 
-Penny could not afford the ride with Bobby 
+Percy could not afford the ride with Ana 
+Percy could not afford the ride with Cali 
+Percy could not afford the ride with Bobby 
 Percy could not afford the ride with Helen 
-Penny could not afford the ride with Georgia 
+Percy could not afford the ride with Igor 
 Percy could not afford the ride with Ema 
-Penny could not afford the ride with Cali 
+Percy could not afford the ride with Georgia 
+Penny's payment transaction is performed, the cost was 89.55
+Penny your driver Furgie accepted the ride and will be there in 671.66 
+Penny your driver is on their way to you
+Penny's payment transaction is performed, the cost was 79.62
+Penny your driver Ana accepted the ride and will be there in 597.18 
+Penny your driver is on their way to you
+Penelope's payment transaction is performed, the cost was 91.78
+Penelope your driver Georgia accepted the ride and will be there in 688.37 
+Penelope your driver is on their way to you
+Paula's payment transaction is performed, the cost was 57.69
+Paula your driver Furgie accepted the ride and will be there in 432.67 
+Paula your driver is on their way to you
 Percy could not afford any rides
-Penny could not afford the ride with Furgie 
-Penny could not afford the ride with Ema 
-Penny could not afford any rides
-Penelope your driver is ready to pick you up
-Penelope your driver is on their way to your destination
 Paula your driver is ready to pick you up
 Paula your driver is on their way to your destination
 Penny your driver is ready to pick you up
 Penny your driver is on their way to your destination
+Penny your driver is ready to pick you up
+Penny your driver is on their way to your destination
+Penelope your driver is ready to pick you up
+Penelope your driver is on their way to your destination
+Penny your trip is complete
 Paula your trip is complete
 Penny your trip is complete
 Penelope your trip is complete

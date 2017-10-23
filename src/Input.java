@@ -49,6 +49,8 @@ public class Input
 		} catch (FileNotFoundException | UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
+		writer.printf("Sucessful Trips: %d, Failed Trips: %d%n", map.sucessfulRides, map.failedRides);
+		writer.flush();
 		for  (Driver carGuy: map.allTheDrivers)
 		{
 			carGuy.printUser(writer);

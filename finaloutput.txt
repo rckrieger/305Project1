@@ -1,15 +1,26 @@
-Ana - balance: 38.24 Location: (287,223) Tesla false score 4.0
-Bobby - balance: 10.00 Location: (162,224) BMW false score 5.0
-Cali - balance: 73.20 Location: (241,265) Volkswagen false score 2.0
-Dora - balance: 30.00 Location: (197,224) Ferari false score 5.0
-Ema - balance: 400.00 Location: (116,288) Honda false score 5.0
-Furgie - balance: 500.00 Location: (39,224) Toyota false score 5.0
-Georgia - balance: 677.68 Location: (131,137) Camden false score 4.0
-Helen - balance: 7000.00 Location: (87,41) Toyota false score 5.0
-Igor - balance: 8000.00 Location: (171,76) Bug false score 5.0
-Jules - balance: 900000.00 Location: (200,204) Honda false score 5.0
-Penelope - balance: 449.01 Location: (287,223) 
-Penny - balance: 96.42 Location: (131,137) 
-Percy - balance: 60.00 Location: (103,164) 
-Penny - balance: 90.00 Location: (215,14) 
-Paula - balance: 229.06 Location: (241,265) 
+Sucessful Trips: 4, Failed Trips: 1
+Ana - Balance: 59.72 Location: (108,63) Rating: 2.0
+      Title: Tesla Occupied: false
+Bobby - Balance: 10.00 Location: (263,29) Rating: 5.0
+      Title: BMW Occupied: false
+Cali - Balance: 20.00 Location: (189,275) Rating: 5.0
+      Title: Volkswagen Occupied: false
+Dora - Balance: 30.00 Location: (266,99) Rating: 5.0
+      Title: Ferari Occupied: false
+Ema - Balance: 400.00 Location: (42,165) Rating: 5.0
+      Title: Honda Occupied: false
+Furgie - Balance: 610.43 Location: (125,158) Rating: 1.5
+      Title: Toyota Occupied: false
+Georgia - Balance: 668.84 Location: (201,4) Rating: 3.0
+      Title: Camden Occupied: false
+Helen - Balance: 7000.00 Location: (135,102) Rating: 5.0
+      Title: Toyota Occupied: false
+Igor - Balance: 8000.00 Location: (79,155) Rating: 5.0
+      Title: Bug Occupied: false
+Jules - Balance: 900000.00 Location: (254,227) Rating: 5.0
+      Title: Honda Occupied: false
+Penelope - Balance: 408.22 Location: (201,4) 
+Penny - Balance: 110.45 Location: (247,219) 
+Percy - Balance: 60.00 Location: (278,170) 
+Penny - Balance: 10.38 Location: (108,63) 
+Paula - Balance: 242.31 Location: (125,158) 

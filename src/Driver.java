@@ -31,7 +31,8 @@ public class Driver extends User {
 	
 	public void printUser(PrintWriter writer) {
 		super.printUser(writer);
-		writer.printf("%s %s score %.1f", vehicle, occupied, getRating());
+		writer.printf("Rating: %.1f%n      Title: %s Occupied: %s", getRating(), vehicle, occupied);
+
 	}
 	
 }
